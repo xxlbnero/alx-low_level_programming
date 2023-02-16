@@ -12,5 +12,7 @@
 
 (6) 6-size.c -> Print the size of the various types on the executing computer
 
+(BONUS-01) 100-intel -> Generate an assembly code (intel syntax) of a .c file and save to output file
+
 
 
