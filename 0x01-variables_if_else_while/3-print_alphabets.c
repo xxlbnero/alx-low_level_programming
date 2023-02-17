@@ -12,8 +12,8 @@ int main(void)
 {
 	int i, j;
 
-	i = 97;   // lower case a
-	j = 65;    // upper case A
+	i = 97;   /* lower case a */
+	j = 65;    /* upper case A */
 
 	while (i < 123)
 	{
