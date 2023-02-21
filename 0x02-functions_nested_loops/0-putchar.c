@@ -10,7 +10,15 @@
 
 int main(void)
 {
-	_putchar("_putchar\n");
+	char s[] = {"_putchar"};
+	int count = 0;	/* for indexing each char in s */
+
+	while (s[count] != '\0')
+	{
+		_putchar(s[count]);
+		count += 1;
+	}
+	_putchar('\n');
 
 	return (0);
 }
