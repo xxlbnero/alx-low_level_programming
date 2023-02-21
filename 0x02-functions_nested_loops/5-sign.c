@@ -2,12 +2,12 @@
 
 /**
  * print_sign - Print the sign of a given number according to program spec
- * @c: integer value rep of character
+ * @n: integer value rep of character
  *
  * Return: 1 if n is greater than 0, zero if n is 0, -1 otherwise
  */
 
-int print_sign(int c)
+int print_sign(int n)
 {
 	int l;
 
