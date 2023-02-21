@@ -4,7 +4,7 @@
 /**
  * Header files used for ALX tasks of
  * functions and nest loops.
- * Mainly containing function prototypes.
+ * Containing function prototypes only.
  */
 
 int _putchar(char c);
