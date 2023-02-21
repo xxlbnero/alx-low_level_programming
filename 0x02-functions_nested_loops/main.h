@@ -1,5 +1,5 @@
-#ifndef MAIN.h
-#define MAIN.h
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
  * Header files used for ALX tasks of
