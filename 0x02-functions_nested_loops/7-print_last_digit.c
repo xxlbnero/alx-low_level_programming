@@ -25,6 +25,6 @@ int print_last_digit(int n)
 			++l;
 		}
 	}
-	_putchar(step);
-	return (step);
+	_putchar((char) step);
+	return ((char) step);
 }
