@@ -20,13 +20,22 @@ void times_table(void)
 		{
 			tab = row * col;
 
-			if (col == lim)
+			tens = tab / 10;
+			units = tab % 10;
+
+			if (col == lim && tab < 10)
 			{
 				_putchar(tab + '0');
 			}
 			else
 			{
-				_putchar(tab + '0');
+				_putchar(tens + '0');
+				_putchar(units + '0');
+			}
+			if (tab > 9)
+			{
+				_putchar(tens + '0');
+				_putchar(units + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
