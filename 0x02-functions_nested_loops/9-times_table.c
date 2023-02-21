@@ -9,37 +9,36 @@
 
 void times_table(void)
 {
-	int row, col, tab, tens, units;
+	int row, col, prod, tens, units;
 	int lim = 9;
 
 	for (row = 0; row <= lim; row++)
 	{
-		_putchar('\n');
-
 		for (col = 0; col <= lim; col++)
 		{
-			tab = row * col;
+			prod = row * col;
+			tens = prod / 10;
+			ones = prod % 10;
 
-			tens = tab / 10;
-			units = tab % 10;
-
-			if (col == lim && tab < 10)
+			if (col == 0)
 			{
-				_putchar(tab + '0');
+				_putchar('0');
 			}
-			else
+			else if (prod < 10)
 			{
-				_putchar(tens + '0');
-				_putchar(units + '0');
-			}
-			if (tab > 9)
-			{
-				_putchar(tens + '0');
-				_putchar(units + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				_putchar('0' + ones);
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + ones);
 			}
 		}
+		_putchar('\n');
 	}
 }
