@@ -26,7 +26,10 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar('0' + tab + ',' + ' ' + ' ');
+				_putchar('0' + tab);
+				_putchar('0' + ',');
+				_putchar('0' + ' ');
+				_putchar('0' + ' ');
 			}
 		}
 	}
