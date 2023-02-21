@@ -18,7 +18,7 @@ void times_table(void)
 		{
 			prod = row * col;
 			tens = prod / 10;
-			ones = prod % 10;
+			units = prod % 10;
 
 			if (col == 0)
 			{
@@ -29,14 +29,14 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar('0' + ones);
+				_putchar('0' + units);
 			}
 			else
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar('0' + ones);
+				_putchar('0' + units);
 			}
 		}
 		_putchar('\n');
