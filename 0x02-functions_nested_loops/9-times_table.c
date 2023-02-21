@@ -22,11 +22,11 @@ void times_table(void)
 
 			if (col == lim)
 			{
-				_putchar(tab - '32');
+				_putchar(tab + '0');
 			}
 			else
 			{
-				_putchar(tab - '32');
+				_putchar(tab + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
