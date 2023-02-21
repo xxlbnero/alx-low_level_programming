@@ -12,8 +12,9 @@ int print_last_digit(int n)
 	int l = n % 10;
 	int step = 0;
 
-	if (l > 0)
+	if (l >= 0)
 	{
+		_putchar('0' + l);
 		return (l);
 	}
 	else
@@ -24,5 +25,6 @@ int print_last_digit(int n)
 			++l;
 		}
 	}
+	_putchar('0' + step);
 	return (step);
 }
