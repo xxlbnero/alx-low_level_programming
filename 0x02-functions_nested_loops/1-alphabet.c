@@ -5,7 +5,7 @@
  * @void - No argument required
  *
  * Description: Function definition to print the letters of the alphabet
- * Return: 0 on successful execution of program
+ * Return: null
  */
 
 void print_alphabet(void)
@@ -19,5 +19,5 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 
-	return (0);
+	return ;
 }
