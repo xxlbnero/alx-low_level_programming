@@ -2,7 +2,6 @@
 
 /**
  * main - tests function that prints if an integer is positive or negative
- *
  * Return: 0 on successful execution of program
  */
 
@@ -10,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	i = 1;
+	i = 0;
 	positive_or_negative(i);
 
 	return (0);
