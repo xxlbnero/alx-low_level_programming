@@ -17,19 +17,11 @@ void more_numbers(void)
 	{
 		for (i = 0; i < 15; i++)
 		{
-			if (i % 10 != i)
+			if (i / 10)
 			{
-				tens = i / 10;
-				units = i % 10;
-
-				_putchar(tens);
-				_putchar(units)
-
+				_putchar(i / 10 + '0');
 			}
-			else
-			{
-				_putchar(i);
-			}
+			_putchar(i % 10 + '0');
 		}
 		_putchar('\n');
 	}
