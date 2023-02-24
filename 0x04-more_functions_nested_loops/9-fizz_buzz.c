@@ -21,13 +21,13 @@ int main(void)
 		{
 			printf("%s ", *mul_three_five);
 		}
-		else if (i % 5 == 0)
-		{
-			printf("%s ", *mul_five);
-		}
 		else if (i % 3 == 0)
 		{
 			printf("%s ", *mul_three);
+		}
+		else if (i % 5 == 0)
+		{
+			printf("%s ", *mul_five);
 		}
 		else
 		{
