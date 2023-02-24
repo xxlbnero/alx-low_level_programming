@@ -19,15 +19,15 @@ void main(void)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("%s ", *mul_three_five);
+			printf("FizzBuzz ");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s ", *mul_five);
+			printf("Buzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%s ", *mul_three);
+			printf("Fizz ");
 		}
 		else
 		{
