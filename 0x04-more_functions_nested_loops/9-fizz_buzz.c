@@ -4,10 +4,10 @@
  * main - Print numbers from 1 to 100 substituting multiples of 3 and 5
  * with specified text
  * @void: No argument required
- * Return: Null
+ * Return: 0 on successful execution of code
  */
 
-void main(void)
+int main(void)
 {
 	char *mul_three[] = {"Fizz"};
 	char *mul_five[] = {"Buzz"};
@@ -19,21 +19,22 @@ void main(void)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("%s", *mul_three_five);
+			printf("%s ", *mul_three_five);
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s", *mul_five);
+			printf("%s ", *mul_five);
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%s", *mul_three);
+			printf("%s ", *mul_three);
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%d ", i);
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
