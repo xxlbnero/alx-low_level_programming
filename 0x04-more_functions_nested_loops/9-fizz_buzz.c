@@ -9,26 +9,30 @@
 
 int main(void)
 {
+	char *mul_three[] = {"Fizz"};
+	char *mul_five[] = {"Buzz"};
+	char *mul_three_five[] = {"FizzBuzz"};
+
 	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
 		if ((i == 100) && (i % 5 == 0))
 		{
-			printf("Buzz");
+			printf("%s", *mul_five);
 			break;
 		}
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("FizzBuzz ");
+			printf("%s ", *mul_three_five);
 		}
 		else if (i % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("%s ", *mul_three);
 		}
 		else if (i % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("%s ", *mul_five);
 		}
 		else
 		{
