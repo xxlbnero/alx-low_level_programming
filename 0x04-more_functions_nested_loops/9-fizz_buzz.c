@@ -17,17 +17,17 @@ void main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
+		if ((i % 3 == 0) && (i % 5))
 		{
-			printf("%s ", *mul_three);
+			printf("%s ", *mul_three_five);
 		}
 		else if (i % 5 == 0)
 		{
 			printf("%s ", *mul_five);
 		}
-		else if ((i % 3 == 0) && (i % 5 == 0))
+		else if (i % 3 == 0)
 		{
-			printf("%s ", *mul_three_five);
+			printf("%s ", *mul_three);
 		}
 		else
 		{
