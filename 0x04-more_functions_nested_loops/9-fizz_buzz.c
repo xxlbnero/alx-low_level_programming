@@ -34,5 +34,5 @@ void main(void)
 			printf("%d ", i);
 		}
 	}
-	putchar('\n');
+	printf("\n");
 }
