@@ -20,6 +20,7 @@ void times_table(void)
 
 			if (product < 10)
 			{
+				_putchar(' ');
 				if (j == 9)
 				{
 					_putchar((product % 10) + '0');
@@ -28,7 +29,6 @@ void times_table(void)
 				{
 					_putchar((product % 10) + '0');
 					_putchar(',');
-					_putchar(' ');
 					_putchar(' ');
 				}
 				continue;
