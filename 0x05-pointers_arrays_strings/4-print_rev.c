@@ -18,7 +18,10 @@ void print_rev(char *s)
 
 	while (str_count >= 0)
 	{
+		if (s[str_count] == '\n')
+			continue;
 		_putchar(s[str_count]);
 		str_count -= 1;
 	}
+	_putchar('\n');
 }
