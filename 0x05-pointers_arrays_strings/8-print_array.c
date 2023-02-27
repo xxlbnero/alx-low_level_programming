@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 
 	i = 0;
 
-	while (a[i] && n > 0)
+	while (a[i] || n > 0)
 	{
 		if (i + 1 == n)
 		{
