@@ -16,7 +16,7 @@ void print_rev(char *s)
 	for (; s[idx] != '\0'; idx++, str_count++)
 		;
 
-	while (str_count)
+	while (s[str_count])
 	{
 		_putchar(s[str_count]);
 		str_count -= 1;
