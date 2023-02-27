@@ -8,11 +8,12 @@
 
 void print_rev(char *s)
 {
-	int str_count;
+	int str_count, idx;
 
 	str_count = 0;
+	idx = 0;
 
-	for (int idx = 0; s[idx] != '\0'; idx++, str_count++)
+	for (; s[idx] != '\0'; idx++, str_count++)
 		;
 
 	while (str_count >= 0)
