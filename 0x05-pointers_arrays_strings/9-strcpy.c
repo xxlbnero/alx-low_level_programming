@@ -14,18 +14,12 @@ char *_strcpy(char *dest, char *src)
 
 	index = 0;
 
-	if (src[index] == '\0')
-	{
-		dest[index] = '\0';
-		return (dest);
-	}
-
 	while (src[index] != '\0')
 	{
 		dest[index] = src[index];
 		index++;
 	}
-	dest[index + 1] = '\0';
+	dest[index] = '\0';
 
 	return (dest);
 }
