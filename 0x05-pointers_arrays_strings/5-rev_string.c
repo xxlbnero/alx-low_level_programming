@@ -8,17 +8,28 @@
 
 void rev_string(char *s)
 {
-	int i, str_count;
+	char *t;
+	int last_index, target, i;
 
-	str_count = 0;
-	i = 0;
+	last_index = 0;
 
-	for (i = 0; s[i] != '\0'; i++, str_count++)
+	/* get the length of string */
+	for (i = 0; str[i] != '\0'; i++, last_index++)
 		;
-	while (str_count >= 0)
+
+	target = last_index;
+	/* Create an array the size of the length of string */
+	char c[last_index];
+
+	/* Copy each element in str starting from the last */
+	for (i = 0; i < target; i++)
 	{
-		_putchar(s[str_count]);
-		str_count--;
+		c[i] = str[last_index - (i + 1)];
 	}
-	_putchar(10);
+
+	/* Modify string in-place */
+	for (i = 0; i != target; i++)
+	{
+		str[i] = c[i];
+	}
 }
