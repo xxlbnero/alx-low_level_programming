@@ -8,7 +8,7 @@
 
 void rev_string(char *s)
 {
-	int last_index, i;
+	int last_index, i, target;
 
 	last_index = 0;
 
@@ -16,7 +16,7 @@ void rev_string(char *s)
 	for (i = 0; s[i] != '\0'; i++, last_index++)
 		;
 
-	int target = last_index;
+	target = last_index;
 	/* Create an array the size of the length of string */
 	char c[target + '0'];
 
