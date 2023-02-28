@@ -18,7 +18,7 @@ void rev_string(char *s)
 
 	target = last_index;
 	/* Create an array the size of the length of string */
-	char c[target + '0'];
+	char c[target];
 
 	/* Copy each element in s starting from the last */
 	for (i = 0; i < target; i++)
