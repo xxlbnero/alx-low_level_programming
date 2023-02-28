@@ -16,7 +16,7 @@ void rev_string(char *s)
 	for (i = 0; s[i] != '\0'; i++, last_index++)
 		;
 
-	const int target = last_index;
+	int target = last_index;
 	/* Create an array the size of the length of string */
 	char c[target + '0'];
 
