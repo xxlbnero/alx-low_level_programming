@@ -9,8 +9,10 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int last_el = _getLen(dest);
+	int last_el;
 	int i;
+
+	last_el = _getLen(dest);
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
