@@ -1,10 +1,4 @@
-#include "main.h"
-
-/**
- * _getLen - Given an input string, return it's length
- * @str: Input string
- * Return: Length of str
- */
+#inlcude "main.h"
 
 int _getLen(char *str)
 {
@@ -13,6 +7,6 @@ int _getLen(char *str)
 	count = 0;
 
 	for (i = 0; str[i] != '\0'; i++, count++)
-		;
-	return (count);
+	       ;
+	return (count);	
 }
