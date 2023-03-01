@@ -13,7 +13,8 @@ char *_strncpy(char *dest, char *src, int n)
 	int src_len;
 	int i;
 
-	src_len = _getLen(dest);
+	for (src_len = 0; dest[src_len] != '\0'; src_len++)
+		;
 
 	for (i = 0; src[i] && i < n; i++)
 	{
