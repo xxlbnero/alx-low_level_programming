@@ -21,7 +21,7 @@ char *_strncpy(char *dest, char *src, int n)
 		if (i == src_len || src[i] == '\n')
 		{
 			dest[i] = '\0';
-			break;
+			continue;
 		}
 		dest[i] = src[i];
 	}
