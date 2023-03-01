@@ -10,13 +10,14 @@
 char *_strcat(char *dest, char *src)
 {
 	int last_el;
-	int i;
+	int i, j;
 
-	last_el = _getLen(dest);
+	for (j = 0; src[j] != '\0'; j++)
+		;
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[last_el + i] = src[i];
+		dest[j + i] = src[i];
 	}
 	return (dest);
 
