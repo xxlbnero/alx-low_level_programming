@@ -39,10 +39,6 @@ char *cap_string(char *str)
 			/* delimiter found. Turn on the flag */
 			flag = 1;
 		}
-		else
-		{
-			continue;
-		}
 	}
 
 	return (str);
