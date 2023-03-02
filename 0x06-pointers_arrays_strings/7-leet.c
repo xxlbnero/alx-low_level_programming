@@ -8,26 +8,24 @@
 
 char *leet(char *str)
 {
-	int i, j, encoded;
-	char ch;
+	int i, j;
+	char cur_char;
 
+	char sub[] = "AaEeOoTtLl";
+	char code[] = "4433007711";
+
+	/* loop through and scan each character */
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		encoded = 0;
-		ch = str[i];
-		if (ch >= 'a' && ch <= 'z')
+		cur_char = str[i];
+		for (j = 0; j < 10; j++)
 		{
-			ch -= 'a' - 'A';
-		}
-		for (j = 0; j < 6; j++)
-		{
-			if (ch == "AEIOST"[j])
+			if (sub[j] == cur_char)
 			{
-				encoded = 1;
-				break;
+				str[i] = code[j];
 			}
-
-			continue;
 		}
 	}
+
+	return (str);
 }
