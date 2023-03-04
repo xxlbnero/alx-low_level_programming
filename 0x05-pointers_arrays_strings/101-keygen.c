@@ -15,7 +15,6 @@ char *rand_str(char *);
 
 int main(void)
 {
-	unsigned int pass;
 	char *str_pass;
 	char str_prog_name[] = "./101-crackme ";
 
