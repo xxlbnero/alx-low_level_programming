@@ -4,7 +4,7 @@
 
 #define MAX_STRING_LENGTH 256
 
-void *_strcat(char *dest, char *src);
+void _strcat(char *dest, char *src);
 char *rand_str(char *);
 /**
  * main - Main entry point of program
@@ -79,7 +79,7 @@ char *rand_str(char *res)
  * @dest: to destination
  * Return: Null
  */
-void *_strcat(char *dest, char *src)
+void _strcat(char *dest, char *src)
 {
 	int i, j;
 
