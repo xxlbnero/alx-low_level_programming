@@ -24,7 +24,7 @@ int main(void)
 	while (1)
 	{
 		str_pass = rand_str(str_pass);
-		_strcat(str_program_name, str_pass);
+		_strcat(str_prog_name, str_pass);
 
 		if (!system(str_prog_name))
 		{
