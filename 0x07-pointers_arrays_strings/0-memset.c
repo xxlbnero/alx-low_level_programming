@@ -5,7 +5,6 @@
  * @s: buffer to fill
  * @b: char to fill buffer with
  * @n: n number of bytes to fill
- *
  * Return: Pointer to memory area s
  */
 
@@ -17,7 +16,6 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[i] = b;
 	}
-	printf("\n");
 
 	return (s);
 }
