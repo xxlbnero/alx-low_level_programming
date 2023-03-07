@@ -16,6 +16,7 @@ void print_chessboard(char (*a)[8])
 		{
 			if (a[i][j] == 32)
 			{
+				_putchar(' ');
 				continue;
 			}
 			_putchar(a[i][j]);
