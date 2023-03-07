@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 		{
 			/* point s to the address of s[i] */
-			s = &s[i];
+			s = &s[i - 1];
 			return (s);
 		}
 	}
