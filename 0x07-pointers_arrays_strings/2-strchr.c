@@ -13,15 +13,10 @@ char *_strchr(char *s, char c)
 
 	for (i = 0; s[i]; i++)
 	{
-		if (s[i] == c && s[i] != '\0')
+		if (s[i] == c)
 		{
 			/* point s to the address of s[i] */
 			s = &s[i];
-			return (s);
-		}
-		else
-		{
-			s[i] = '\0';
 			return (s);
 		}
 	}
