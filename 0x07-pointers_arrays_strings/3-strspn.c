@@ -19,10 +19,14 @@ unsigned int _strspn(char *s, char *accept)
 		cur_char = s[i];
 		for (j = 0; accept[j]; j++)
 		{
-			if (cur_char == accept[j])
+			if (cur_char >= 'a' && cur_char <= 'z' && accept[j]
+					>= 'a' && accept[j] <= 'z')
 			{
 				count += 1;
+				break;
 			}
+
+			return (count);
 		}
 	}
 
