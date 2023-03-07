@@ -9,26 +9,26 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-	char cur_char;
-	char *tVar;
+	char tvar[1024];
+	int i, j, needle_len;
+
+	needle_len = 0;
+
+	for (; needle[needle_len]; needle_len++)
+		;
 
 	for (i = 0; haystack[i]; i++)
 	{
-		cur_char = haystack[i];
-
-		for (j = 0; needle[j]; j++)
+		if (haystack[i] == needle[0] && haystack[i + 1] == needle[1])
 		{
-			if (cur_char == needle[j])
+			for (j = 0; j < needle_len; j++)
 			{
-				tVar = &haystack[i];
-
-				if (tVar == needle)
-				{
-					haystack = tVar;
-					return (haystack);
-				}
-				break;
+				tvar[j] = haystack[i + j];
+			}
+			if (*tvar == *needle)
+			{
+				haystack = &haystack[i];
+				return (haystack);
 			}
 		}
 	}
