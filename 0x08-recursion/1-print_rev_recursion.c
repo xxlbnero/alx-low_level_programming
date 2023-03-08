@@ -16,6 +16,6 @@ void _print_rev_recursion(char *s)
 
 	if (!*s)
 	{
-		_putchcar(10);
+		_putchar(10);
 	}
 }
