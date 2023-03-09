@@ -19,7 +19,7 @@ int sqrt_recur(int x, int g)
 }
 
 /**
- * sqrt - find the square root of a number
+ * _sqrt - find the square root of a number
  * @x: input number
  * Return:  square root of x
  */
