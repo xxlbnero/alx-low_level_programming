@@ -19,12 +19,12 @@ int sqrt_recur(int x, int g)
 }
 
 /**
- * _sqrt - find the square root of a number
+ * _sqrt_recursion - find the square root of a number
  * @x: input number
  * Return:  square root of x
  */
 
-int _sqrt(int x)
+int _sqrt_recursion(int x)
 {
 	if (x < 0)
 	{
