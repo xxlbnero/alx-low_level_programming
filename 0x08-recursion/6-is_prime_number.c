@@ -24,7 +24,7 @@ int sqrt_recur(int x, int g)
  * Return:  square root of x
  */
 
-int sqrt(int x)
+int _sqrt(int x)
 {
 	if (x < 0)
 	{
@@ -50,7 +50,7 @@ int is_prime_aux(int n, int i)
 	{
 		return (0);
 	}
-	if (i > sqrt(n))
+	if (i > _sqrt(n))
 	{
 		return (1);
 	}
