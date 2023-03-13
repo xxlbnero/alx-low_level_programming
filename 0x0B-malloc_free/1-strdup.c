@@ -27,7 +27,7 @@ char *_strdup(char *str)
 		return ("\0");
 	}
 	/* allocate memory with size slen */
-	nstr = malloc(sizeof(char) * slen);
+	nstr = malloc(sizeof(char) * slen + 1);
 
 	/* NULL check */
 	if (nstr == NULL)
