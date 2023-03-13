@@ -9,6 +9,7 @@
 
 char *create_array(unsigned int size, char c)
 {
+	int i;
 	char *mchar;
 
 	mchar = NULL;
@@ -23,7 +24,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	*mchar = c;
 
+	for (i = 0; i < size; i++)
+	{
+		mchar[i] = c;
+	}
 	return (mchar);
 }
