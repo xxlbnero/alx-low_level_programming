@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s1 == NULL)
 	{
-		nstr[0] = "";
+		nstr = "";
 	}
 	else
 	{
@@ -50,7 +50,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 == NULL)
 	{
-		nstr[i + 1] = "";
+		nstr = "";
 	}
 	else
 	{
