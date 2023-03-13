@@ -19,14 +19,13 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	if (*str == "")
-	{
-		return ("\0");
-	}
-
 	/* first, get the length of str */
 	for (; str[slen]; slen++)
 		;
+	if (slen == 1)
+	{
+		return ("\0");
+	}
 	/* allocate memory with size slen */
 	nstr = malloc(sizeof(char) * slen);
 
