@@ -10,7 +10,7 @@ int getlen(char *s)
 {
 	int count;
 
-	for (count = 0; s[count] count++)
+	for (count = 0; s[count]; count++)
 		;
 	return (count);
 }
