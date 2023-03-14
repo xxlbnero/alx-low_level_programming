@@ -26,9 +26,9 @@ int **alloc_grid(int width, int height)
 	{
 		mptr[i] = (int *)malloc(width * sizeof(int));
 	}
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
-		for (j = 0; j < height; j++)
+		for (j = 0; j < width; j++)
 		{
 			mptr[i][j] = 0;
 		}
